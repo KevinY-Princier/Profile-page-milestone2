@@ -1,0 +1,117 @@
+@media print {
+  * {
+    background: white !important;
+    color: black !important;
+  }
+
+  body {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav,
+  button,
+  iframe {
+    display: none !important;
+  }
+
+  div {
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 18pt;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-size: 14pt;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+  }
+
+  p {
+    font-size: 11pt;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: underline;
+    color: black !important;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+  }
+
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  ul,
+  ol {
+    margin-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+    font-size: 11pt;
+  }
+
+  img {
+    max-width: 100px;
+    page-break-inside: avoid;
+    border: 1px solid black;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+  }
+
+  table th {
+    background-color: #f0f0f0 !important;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 10pt;
+  }
+
+  table td {
+    border: 1px solid black;
+    padding: 6px;
+    font-size: 10pt;
+  }
+
+  form {
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  form label {
+    font-weight: bold;
+  }
+
+  form input,
+  form textarea {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  hr {
+    border-top: 1px solid black;
+    margin: 15px 0;
+  }
+
+  #profile {
+    text-align: center;
+    page-break-after: avoid;
+  }
+}
