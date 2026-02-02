@@ -205,3 +205,9 @@ iframe {
   margin-left: 15px;
   font-size: 0.9rem;
 }
+
+.title {
+  color: #cdff71;
+  font: bold;
+  font-style: italic;
+}
